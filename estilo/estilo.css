@@ -1,0 +1,320 @@
+*{  /** zerar tudo **/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+/**Boot CSS**/
+
+
+
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.w33{
+    width: 33.3%;
+    padding: 0 4%;
+}
+
+.w50{
+    width: 50%;
+    padding: 0 2%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+} 
+
+/** Estilização do site **/
+
+header{
+    padding: 20px 0;
+    background-color: #434885;
+}
+
+header .logo{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+img[src="imagens/fundo1.jpg"]{
+    width: 160px;
+    height: 294px;
+}
+
+.mobile{
+    display: none;
+}
+
+nav.desktop ul{
+    position: relative;
+    top: 3px;
+    list-style-type: none;
+}
+
+nav.desktop li{
+    font-size: 15px;
+    padding:0 15px;
+    display: inline-block;
+}
+
+nav.desktop a{
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+nav.desktop a:hover{
+    text-decoration: underline;
+    
+}
+
+section.banner-principal{
+    width: 100%;
+    height: 600px;
+    background-image: url("../imagens/fundo1.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #00000066;
+}
+
+section.banner-principal form{
+    width: 90%;
+    z-index: 2;
+    position: absolute;
+    max-width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+section.banner-principal form h2{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+section.banner-principal form input[type=email]{
+    width: 100%;
+    height: 40px;
+    background: #434885;
+    color: #333333;
+    font-size: 22px;
+    padding-left: 10px;
+    margin-top: 10px;
+    border-bottom: 10px;
+    border: 0;
+}
+
+section.banner-principal form input[type=submit]{
+    width: 80%;
+    height: 40px;
+    background: #3c43a7 ;
+    color: #ffffff;
+    font-size: 22px;
+    padding-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+}
+
+section.descricao-do-autor{
+    padding: 30px 0;
+}
+
+section.descricao-do-autor h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+section.descricao-do-autor p{
+    font-size: 15px;
+    color: #333333;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+img{
+    width: 100%;
+    max-width: 400px;
+}
+
+section.especialidades{
+    padding: 40px 0;
+    background: #e3e3e3;
+}
+
+
+section.especialidades h2.title{
+    font-size: 40px;
+    font-weight: 400;
+    color: #999;
+    text-align: center;
+}
+
+.box-especialidade{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.box-especialidade h3{
+    font-size: 35px;
+    color:  #434885;
+}
+
+.box-especialidade h4{
+    color: #646363;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.box-especialidade p{
+    text-align: justify;
+    color: #444444;
+    font-size: 15px;
+    margin-top: 10px;
+}
+section.extras{
+    padding: 30px 0;
+    background: #434885;
+}
+
+section.extras .title{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.depoimento-single{
+    color:  #161616;
+    padding: 15px 0;
+    border-bottom: 1px solid #09090a;
+}
+
+p.depoimentos{
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+p.nome-auto{
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.servicos-container,.depoimentos-container{
+    padding: 0 50px;
+}
+
+.servicos ul{
+    margin: 20px 0;
+}
+.servicos li{
+    color: #ffffff;
+    margin: 20px 0;
+    list-style-position: inside;
+    margin-bottom: 15px;
+    padding: 15px 0;
+}
+footer{
+    background: #2d3164;
+    padding: 10px 0;
+}
+footer p{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px){
+    img{
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+      
+    }
+    .w50{
+        padding: 20px;
+        width: 100%;
+    }
+    .w33{
+        width: 100%;
+        padding: 20px;
+    }
+    .box-especialidade{
+        margin: 0;
+        padding: 40px 20px;
+    }
+} 
+
+@media screen and (max-width: 700px){
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+    }
+    nav.mobile ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        z-index: 3;
+        top: 55px;
+        text-align: center;
+        width: 100%;
+    }
+    nav.mobbile li{
+        border-bottom: 1px solid rgb(204, 204, 204);
+        font-size: 15px;
+        display: block;
+    }
+
+    nav.mobile a{
+        background: #ffffff;
+        font-weight: 300;
+        display: block;
+        color: #333333;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .botao-menu-mobile{
+        font-size: 25px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
